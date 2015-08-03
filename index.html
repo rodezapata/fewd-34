@@ -4,10 +4,95 @@
     <meta charset="utf-8">
     <title>My Fewd Page</title>
     <style>
-      header { background-color: red; position: relative; }
-      img { position: absolute; top: 0; right: 0; }
-      footer { position:fixed; bottom: 0;}
-      h1 { line-height: 200px;}
+      header { background-color: #red;
+               position: relative;
+             text-align: center;
+           margin: 0px 0px;}
+      .image-container {
+         background: #fff;
+         border: 0px solid #ccc;
+         text-align: center; /* Center an image */
+         padding-top: 6em;
+         padding-bottom: 0em;
+         margin: 8px 100px;
+       }
+       img { border-radius: 50%;
+         height: 110px;
+         width: 110px;
+         }
+       footer { position:fixed; bottom: 0;}
+       h1 {
+          color: #333333;
+          font-size: 30px;
+          font-weight: 100;
+          font-family: 'Open Sans Semi-Bold 600', sans-serif;
+          line-height: 100%;
+          line-height: 30px;
+
+          padding: 0em;
+          text-align: center;}
+          h2 {
+             color: #333333;
+             font-size: 16px;
+             font-weight: 100;
+             font-family: 'Open Sans Semi-Bold 600', sans-serif;
+             line-height: 100%;
+             line-height: 0px;
+
+             padding: 0em;
+             text-align: center;}
+
+          p {
+            text-align: center;
+
+            font-size: 13px;
+            font-weight: 100;
+            font-family: 'Open Sans Normal 400', sans-serif;
+            line-height: 100%;
+            line-height: 22px;
+            color: #333333;
+            padding-top: 1em;
+
+            }
+
+            .paragraph {
+              length: 30px;
+              width: 500px;
+              margin: auto;
+
+            }
+            ul{ width: 70px;
+              text-align: left;
+              padding: 0 19em 2px;
+              line-height: 30px
+
+                }
+            a {
+              background: #eee;
+              padding: 0 6px 2px;
+              border-radius: 4px;
+              position: relative;
+              top: -1px;
+              margin: 0 3px 0 1px;
+              font-size: 100%;
+              position: relative;
+
+
+
+
+              color: #blue;
+
+
+
+  }
+
+  .container {
+     background: #fff;
+     border: 0px solid #ccc;
+     text-align: center; /* Center an image */
+     padding-top: 0em;
+     padding-bottom: 0em;
+     margin: 4px 100px;
 
 
 
@@ -16,17 +101,32 @@
     </head>
   <body>
     <header>
-        <h1>Rodrigo Zapata</h1>
-      <img src="https://pbs.twimg.com/profile_images/507780334880968704/FECY9UnD.jpeg"
-      alt="rodrigo" width="200" height="200"/>
+
+
     </header>
     <main>
-      <p> My name is Rodrigo Zapata <p>
-        <ul>
-          <li><a href="http://rodezapata.github.io/fewd-34/week-1/homework">Whales</a></li>
-          <li><a href="http://rodezapata.github.io/fewd-34/week-1/homework">Acme Pandas</a></li>
-        </ul>
-          </main>
+      <div class="image-container">
+        <img src="https://pbs.twimg.com/profile_images/507780334880968704/FECY9UnD.jpeg"
+        alt="rodrigo" width="200" height="200"/>
+      </div>
+
+      <h1>Rodrigo Zapata</h1>
+      <h2> Product Designer</h2>
+      <div class="paragraph">
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        </p>
+      </div>
+      <div class="container">
+       <ul>
+         <li><code><a href="http://rodezapata.github.io/fewd-34/week-1/homework">Whales</a></code></li>
+         <li><code><a href="http://rodezapata.github.io/fewd-34/week-1/homework">Acme </a></code></li>
+       </ul>
+       </div>
+
+      </main>
     <footer> <p>rodrigo zapata 2012</p></footer>
   </body>
 </html>

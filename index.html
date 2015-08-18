@@ -1,174 +1,289 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
-    <title>My Fewd Page</title>
+    <title>**DatNewNew**</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <style>
-      header { background-color: #red;
-               position: relative;
-             text-align: center;
-           margin: 0px 0px;}
-      .image-container {
-         background: #fff;
-         border: 0px solid #ccc;
-         text-align: center; /* Center an image */
-         padding-top: 4em;
-         padding-bottom: 0em;
-         margin: 8px 100px;
-       }
-       img { border-radius: 50%;
-         height: 140px;
-         width: 140px;
-         }
-       footer { position: absolute; bottom: 2em;
-        font-family: 'Open Sans Semi-Bold 600', sans-serif;
-        font-size: 12px;
-        padding-left: 20px;
-        padding-top: 200px;
-        float: center;
-        color: #D1D1D1
 
+    body {
+    margin: 0px;
+    font-family: 'PT Sans', sans-serif;
+    }
 
-       }
-       h1 {
-          color: #333333;
-          font-size: 30px;
-          font-weight: 100;
-          font-family: 'Open Sans Semi-Bold 600', sans-serif;
-          line-height: 100%;
-          line-height: 30px;
+  /* Header bar Style */
 
-          padding: 0em;
-          text-align: center;}
-          h2 {
-             color: #333333;
-             font-size: 16px;
-             font-weight: 100;
-             font-family: 'Open Sans Semi-Bold 600', sans-serif;
-             line-height: 100%;
-             line-height: 0px;
+    header {
+    background: rgba(255, 255, 255, 0.9);
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    box-shadow: 0px 1px 0px 0px rgba(235,235,235,0.50);
 
-             padding: 0em;
-             text-align: center;}
+    }
 
-          p {
-            text-align: center;
-
-            font-size: 14px;
-            font-weight: 100;
-            font-family: 'Open Sans Normal 400', sans-serif;
-            line-height: 100%;
-            line-height: 22px;
-            color: #333333;
-            padding-top: 1em;
-
-            }
-
-            .paragraph {
-              length: 30px;
-              width: 580px;
-              margin: auto;
-
-            }
-            ul{ width: 70px;
-              text-align: left;
-              padding: 0 19em 2px;
-              line-height: 30px
-
-                }
-            a.class1 {
-              background: #eee;
-              padding: 3px 8px 3px 7px;
-              border-radius: 4px;
-              position: relative;
-              top: 0px;
-              margin: 0em 3px 0 1px;
-              font-size: 100%;
-              position: relative;
-              text-decoration: none;
-
-
-
-
-              color: #333333;
-
-
-
-  }
-
-  a.class2 {
-    background: #fff;
-    padding: 0 0px 0px;
-    border-radius: 4px;
+    nav {
+    float: right;
+    margin-top: 17px;
+    text-align: right;
     position: relative;
-    top: 0px;
-    margin: 0 3px 0 1px;
-    font-size: 100%;
-    position: relative;
+    }
+
+    nav a {
     text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #333;
+    transition: 333ms all ease-in-out;
+    font-family: 'PT Sans', sans-serif;
+    }
+
+    nav a:hover {
+    color: #F06D3F;
+    }
+
+
+    .button {
+      width: 80px;
+      line-height: 25px;
+      display: inline-block;
+      background-color: #76CFE9;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color .5s, font-size 14;
+      cursor: pointer;
+      font-size: 14;
+      position: relative;
+      text-align: center;
+    }
+    .button:after {
+      left: 50%;
+      right: 50%;
+      height: 4px;
+      background-color: #F06D3F;
+      bottom: -4px;
+      content: "";
+      opacity: 0;
+      position: absolute;
+      transition: left .5s, right .5s, opacity .5s;
+    }
+    .button:hover {
+      font-size: 14;
+      background-color: #333;
+    }
+    .button:hover:after {
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+
+    .container {
+      width: 100%;
+      text-align: center;
+
+    }
+
+/* Body Style */
+
+    html{
+    background:url(http://i.imgur.com/QWqSG0X.png) no-repeat;
+    background-size: cover;
+    height:100%;
+    }
+    h1 {
+      text-align: center;
+       color: #fff;
+       margin-top: 170px;
+       margin-bottom: 10px;
+       font-size: 45px;
+       font-style: oblique;
+      }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      max-width: 560px;
+      position: relative;
+      margin: auto;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+
+
+    a {
+      text-decoration: underline;
+      color: #fff;
+
+    }
+
+    .dropdown {
+      position: relative;
+
+      text-align: left;
+      width: 132px;
+      margin-left: auto ;
+      margin-right: auto;
+      margin-top: 20px;
+
+    }
+
+    .dropdown-text {
+      cursor: pointer;
+      position: absolute;
+      text-indent: 10px;
+      line-height: 32px;
+      background-color: transparent;
+      border: 1px solid #ccc;
+      border-radius: 0px;
+      width: 100%;
+    }
+
+    .dropdown-text:after {
+      position: absolute;
+      right: 6px;
+      top: 15px;
+      content: '';
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 5px 4px 0 4px;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    .dropdown-text,
+    .dropdown-content a {
+      color: #fff;
+
+    }
+
+    .dropdown-toggle {
+      font-size: 0;
+      z-index: 1;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      border: none;
+      padding: 0;
+      margin: 0 0 0 1px;
+      background: transparent;
+      text-indent: -10px;
+      height: 34px;
+      width: 100%;
+    }
+
+    .dropdown-toggle:focus {
+      outline: 0;
+    }
+
+    .dropdown-content {
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease;
+      list-style-type: none;
+      position: absolute;
+      top: 32px;
+      padding: 0;
+      margin: 0;
+      opacity: 0;
+      visibility:hidden;
+      border-radius: 0px;
+      text-indent: 10px;
+      line-height: 32px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      width: 140px;
+    }
+
+    .dropdown-content a {
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background: transparent;
+    }
+
+
+    .dropdown-toggle:hover ~ .dropdown-text,
+    .dropdown-toggle:focus ~ .dropdown-text {
+      background-color: transparent;
+    }
+
+    .dropdown-toggle:focus ~ .dropdown-text {
+      box-shadow: 0 0px 0px rgba(0,0,0, .2) inset, 0 0px 0 rgba(255,255,255, 0.8);
+      z-index: 2;
+    }
+
+    .dropdown-toggle:focus ~ .dropdown-text:after {
+      border-width: 0 4px 5px 4px;
+      border-color: transparent transparent #fff transparent;
+    }
+
+    .dropdown-content:hover,
+    .dropdown-toggle:focus ~ .dropdown-content {
+      opacity: 1;
+      visibility:visible;
+      top: 42px;
+    }
 
 
 
 
-    color: #333333;
 
 
 
-}
 
-  a:hover { text-decoration: underline;
 
-  }
 
-  .container {
-     background: #fff;
-     border: 0px solid #ccc;
-     text-align: center; /* Center an image */
-     padding-top: 2em;
-     padding-bottom: 0em;
-     margin: 4px 100px; width;
 
-}
 
-.container ul {
-  margin: 0 auto;
-}
 
-    </style>
-    </head>
+
+
+</style>
+
+  </head>
   <body>
     <header>
-
+      <div class="row">
+      <img class="logo"  <a href="http://imgur.com/MwsJTcO"><img src="http://i.imgur.com/MwsJTcO.png" title="source: imgur.com" width="144px" height="44" /></a>
+          <nav>
+          <a href="http://rodezapata.github.io/fewd-34/"target="_blank">Home</a>
+          <a href="http://www.rodrigozapata.com/about/"target="_blank">About</a>
+          <a  href="http://www.rodrigozapata.com/read-me/"target="_blank">Contact</a>
+          <a href="https://soundcloud.com/theghoststreet" target="_blank" class="button">music</a>
+          </nav>
+      </div>
 
     </header>
-    <main>
-      <div class="image-container">
-        <img src="https://pbs.twimg.com/profile_images/507780334880968704/FECY9UnD.jpeg"
-        alt="rodrigo" width="200" height="200"/>
-      </div>
 
-      <h1>Rodrigo Zapata</h1>
-      <h2> Sr. Visual Designer</h2>
-      <div class="paragraph">
-      <p> Hello, I'm an Oakland-based Sr. Visual Designer with 5+ years in the field. I love learning
-        new things such as building my own websites from scratch. You can check out some of my selected
-         work <a href="http://rodrigozapata.com" class="class2"><strong>here</strong></a>, you can also check out
-         my awesome FEWD homework below.
+    <div class="container">
+    <div class="panel highlight">
+    <h1> Wassup. </h1>
+    <p>
+      Hello, I'm an Oakland-based Sr. Visual Designer with 5+ years in the field.
+      I love learning new things such as building my own websites from scratch.
+      To check out more of my photos go <a href="http://www.strawberrycoma.com/">HERE</strong></a>, you can also check out my awesome FEWD homework below.
+    </p>
+    		</div>
+    </div>
 
-        </p>
-      </div>
-      <div class="container">
-       <ul>
-         <li><code><a href="http://rodezapata.github.io/fewd-34/homework-1/" class="class1">Whales</a></code></li>
-         <li><code><a href="http://rodezapata.github.io/fewd-34/homework-2/"class="class1">Acme </a></code></li>
-       </ul>
-       </div>
 
-      </main>
 
-    <footer> <a href="http://rodrigozapata.com"class="class2">  &copy; Rodrigo Zapata 2015 </a>
-
-    </h3></footer>
+    <div class="dropdown">
+    <input class="dropdown-toggle" type="text">
+    <div class="dropdown-text">Homework</div>
+    <ul class="dropdown-content">
+    <li><a href="#">Homework 1</a></li>
+    <li><a href="#">Homework 2</a></li>
+    <li><a href="#">Homework 3</a></li>
+    </ul>
+    </div>
 
   </body>
 </html>

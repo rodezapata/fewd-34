@@ -242,7 +242,9 @@ margin-right: auto
 }
 
 .tile a:hover {
-  opacity: .5;
+  opacity: .1;
+
+
 
 }
 

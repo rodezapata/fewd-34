@@ -56,7 +56,19 @@ body { font-family: sans-serif; }
   </div>
 
   <script>
+  <script>
   function addImage() {
+      var imgLink = prompt("link to the image?");
+      var imgWidth = prompt("width should the image be?");
+      var imgHeight = prompt("should the height of the image be?");
+      var imageBox = document.querySelector("#image");
+      var imageTag = document.createElement("img");
+      imageTag.setAttribute("src", imgLink);
+      imageTag.setAttribute("width", imgWidth);
+      imageTag.setAttribute("height", imgHeight);
+      imageBox.appendChild(imageTag);
+  }
+  </script>
 
   }
   </script>

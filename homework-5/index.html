@@ -118,22 +118,7 @@
 
 
 
-    var submit = document.querySelector(".comment-button");
-
-    submit.addEventListener("click", comment);
-
-    function comment(event) {
-      event.preventDefault();
-      var newComment = document.querySelector("#new-comment-body").value;
-      var submittedComments = document.querySelector("#comments");
-      var postComment = document.createElement("div");
-      var timeStamp = new Date();
-      postComment.innerHTML = newComment;
-      postComment.classList.toggle("comment");
-      submittedComments.appendChild(postComment);
-
-    }
-
+  
 
 
 

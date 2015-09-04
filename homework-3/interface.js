@@ -14,7 +14,7 @@ function calcPy(event) {
 }
 
 
-
+function calcLongestSide
 
 
 

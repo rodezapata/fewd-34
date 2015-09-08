@@ -115,10 +115,35 @@
 
 
 
+function newComment(event) {
+
+    event.preventDefault();
+
+    //take the value of the text area (selecting the value of the text area)
+    var commentInput = document.querySelector("#new-comment-body").value;
+    // set it to text content of new div that we create
+    var newDiv = document.createElement("div");
+    // also put the class on that comment select parent
+    var inputField = document.querySelector("#comments");
+    // new div should be commentInput
+    newDiv.textContent = commentInput;
+    // attribute to new div
+    newDiv.setAttribute("class", "newComment")
+    //append
+    inputField.appendChild(newDiv);
+
+    }
+
+    // add event listener, when button is clicked run function newComment
+
+    var b = document.querySelector("button");
+    b.addEventListener("click",newComment);
 
 
 
-  
+
+
+
 
 
 

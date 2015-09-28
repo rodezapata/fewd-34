@@ -104,7 +104,8 @@
     </main>
 
     <script>
-    function like(something){
+    
+    function like(){
       var likeCount = document.querySelector(".like-count")
       var newNumberOflikes = parseInt (likeCount.textContent)+ 1;
       likeCount.textContent = newNumberOflikes;
@@ -115,7 +116,7 @@
 
 
 
-function newComment(event) {
+function newComment() {
 
     event.preventDefault();
 
@@ -125,10 +126,11 @@ function newComment(event) {
     var newDiv = document.createElement("div");
     // also put the class on that comment select parent
     var inputField = document.querySelector("#comments");
+
     // new div should be commentInput
     newDiv.textContent = commentInput;
     // attribute to new div
-    newDiv.setAttribute("class", "newComment")
+    newDiv.setAttribute("class","newComment")
     //append
     inputField.appendChild(newDiv);
 

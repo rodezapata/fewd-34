@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> test 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+
+
+  </head>
+  <body>
+
+    <header class="header-basic">
+
+			<div class="header-limiter">
+
+				<h1><a href="#">Company<span>logo</span></a></h1>
+
+				<nav>
+					<a href="#">Home</a>
+					<a href="#">Blog</a>
+					<a href="#">Pricing</a>
+					<a href="#">About</a>
+					<a href="#">Faq</a>
+					<a href="#">Contact</a>
+				</nav>
+			</div>
+
+		</header>
+
+    <div id="backgroundImage">
+    <img src="imagesjpg/1_bicicletas.jpg" style="opacity: 1;">
+    </div>
+    <div id="arrowPrev" ><i class="fa fa-cloud"></i></div>
+    <div id="arrowNext" ><i class="fa fa-cloud"></i></div>
+
+
+    <style>
+
+    body {
+     margin:0;
+     padding:0;
+    }
+
+    .header-basic {
+
+    	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
+    	padding: 20px 40px;
+    	height: 75px;
+    	box-sizing: border-box;
+    }
+
+    .header-basic .header-limiter {
+    	max-width: 1200px;
+    	text-align: center;
+    	margin: 0 auto;
+    }
+
+    /* Logo */
+
+    .header-basic .header-limiter h1 {
+    	float: left;
+    	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+    	line-height: 40px;
+    	margin: 0;
+    }
+
+    .header-basic .header-limiter h1 span {
+    	color: #5383d3;
+    }
+
+    /* The header links */
+
+    .header-basic .header-limiter a {
+    	color: #ffffff;
+    	text-decoration: none;
+    }
+
+    .header-basic .header-limiter nav{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font:16px
+    	line-height: 60px;
+    	float: right;
+    }
+
+    .header-basic .header-limiter nav a{
+    	display: inline-block;
+    	padding: 0 5px;
+    	text-decoration:none;
+    	color: #ffffff;
+    	font-size: 16px;
+    	opacity: 0.9;
+    }
+
+    .header-basic .header-limiter nav a:hover{
+    	opacity: 1;
+    }
+
+    .header-basic .header-limiter nav a.selected {
+    	color: #608bd2;
+    	pointer-events: none;
+    	opacity: 1;
+    }
+
+    /* Making the header responsive */
+
+    @media all and (max-width: 600px) {
+
+    	.header-basic {
+    		padding: 20px 0;
+    		height: 75px;
+    	}
+
+    	.header-basic .header-limiter h1 {
+    		float: none;
+    		margin: -8px 0 10px;
+    		text-align: center;
+    		font-size: 24px;
+    		line-height: 1;
+    	}
+
+    	.header-basic .header-limiter nav {
+    		line-height: 1;
+    		float:none;
+    	}
+
+    	.header-basic .header-limiter nav a {
+    		font-size: 13px;
+    	}
+
+    }
+
+
+    #backgroundImage {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0px;
+    }
+    #backgroundImage img {
+    width: 100%;
+    height:auto;
+    min-height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    #arrowPrev, #arrowNext {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    opacity: 1;
+    z-index: 99999;
+    }
+    #arrowNext {
+    right: 10px;
+        background: url('http://new.llhinteriors.com/wp-content/uploads/arrows-next.png'); }
+    #arrowPrev {
+    left: 10px;
+    background: url('http://new.llhinteriors.com/wp-content/uploads/arrows-prev.png');
+    }
+
+
+
+    </style>
+
+    <script>
+
+    slides = new Array();
+slides[0] = "imagesjpg/1_bicicletas.jpg";
+slides[1] = "imagesjpg/2_muebles.jpg";
+slides[2] = "imagesjpg/3_entretenimiento.jpg";
+slides[3] = "imagesjpg/4_cocina.jpg";
+slides[4] = "imagesjpg/5_ferreteria.jpg";
+slides[5] = "imagesjpg/6_jugueteria.jpg";
+
+
+$('body').append('<div style="left:-10000000px; top:-10000000px; position:absolute;" id="preloadslides"></div>');
+$.each(slides, function (index, value) {
+    $('#preloadslides').append('<img src="' + value + ' />');
+});
+
+
+
+i = 1;
+
+function slidesMove() {
+    if (i >= slides.length - 1) {
+        i = 0;
+    } else {
+        i++;
+    }
+    $('#backgroundImage > img').animate({
+        opacity: 0
+    }, 1000);
+    var $nextimage = $('<img src="' + slides[i] + '" style="opacity:0" />');
+    $('#backgroundImage').append($nextimage);
+    $nextimage.animate({
+        opacity: 1
+    }, 1000, function () {
+        $('#backgroundImage > img').first().remove();
+    });
+}
+
+function slidesMovePrev() {
+    if (i == 0) {
+        i = slides.length - 1;
+    } else {
+        i = i - 1;
+    }
+    $('#backgroundImage > img').animate({
+        opacity: 0
+    }, 1000);
+    var $lastImage = $('<img src="' + slides[i] + '" style="opacity:0" />');
+    $('#backgroundImage').append($lastImage);
+    $lastImage.animate({
+        opacity: 1
+    }, 1000, function () {
+        $('#backgroundImage > img').first().remove();
+    });
+}
+
+
+function cycle() {
+    setInter = setInterval(function () {
+        slidesMove();
+    }, 5000);
+}
+cycle();
+
+$('#arrowNext').click(function () {
+    slidesMove();
+    clearInterval(setInter);
+});
+
+$('#arrowPrev').click(function () {
+    slidesMovePrev();
+    clearInterval(setInter);
+});
+
+    </script>
+
+  </body>
+</html>

@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 
   </head>
@@ -15,25 +16,40 @@
 
 			<div class="header-limiter">
 
-				<h1><a href="#">Company<span>logo</span></a></h1>
+				<h1> <img class="logo" src="imagesjpg/logo.png" title="source: imgur.com" width="45%" height="45%" /></h1>
 
 				<nav>
-					<a href="#">Home</a>
-					<a href="#">Blog</a>
-					<a href="#">Pricing</a>
-					<a href="#">About</a>
-					<a href="#">Faq</a>
-					<a href="#">Contact</a>
+					<a href="#">NOSOTROS</a>
+					<a href="#">PRODUCTOS</a>
+					<a href="#">PROMOS</a>
+					<a href="#">ENTREGAS</a>
+
 				</nav>
 			</div>
 
 		</header>
 
+
+    </div>
+
+    <div id="section">
+
+      <p>
+        Excelente para salir a dominguear
+      </p>
+      <h1>BICICLETAS</h1>
+      <button type="button" name="button">VER MAS</button>
+
+    </div>
+
+
+
+
     <div id="backgroundImage">
     <img src="imagesjpg/1_bicicletas.jpg" style="opacity: 1;">
     </div>
-    <div id="arrowPrev" ><i class="fa fa-cloud"></i></div>
-    <div id="arrowNext" ><i class="fa fa-cloud"></i></div>
+    <div id="arrowPrev" ><i class="fa fa-chevron-left" width="30px" height="30px" ></i></div>
+    <div id="arrowNext" ><i class="fa fa-chevron-right"width="30px" height="30px"></i></div>
 
 
     <style>
@@ -43,27 +59,81 @@
      padding:0;
     }
 
+    #section {
+    width:500px;
+    margin: 70px;
+    float:left;
+    padding:10px;
+    background-color:transparent;
+}
+
+    #section p{
+      font-family: "Open Sans" sans-serif;
+      line-height: 1px;
+      font-size: 20px;
+      font-weight: 300;
+      color: #fff
+
+    }
+
+    #section h1{
+      font-family: "Montserrat" sans-serif;
+      font-size: 100px;
+      line-height: 1px;
+      font-weight: 700;
+      color: #fff
+
+    }
+
+    #section button{
+
+          border: 1px solid 
+          border-color: #fff;
+          color: #fff;
+          font-family: "Open Sans" sans-serif;
+          font-size: 12px;
+          font-weight: 300;
+          height: 60px;
+          width: 200px;
+          margin: 5px 5px;
+          text-align: center;
+          border: 0;
+          transition: all 0.3s ease 0s;
+      }
+
+
     .header-basic {
 
     	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
-    	padding: 20px 40px;
+    	padding:20px 40px 0px 0px;
     	height: 75px;
     	box-sizing: border-box;
     }
 
-    .header-basic .header-limiter {
-    	max-width: 1200px;
-    	text-align: center;
-    	margin: 0 auto;
+    .header-basic {
+    	max-width: 2000px;
+    	text-align: left;
+    	padding-left: 45px;
+
     }
+
+    .header-limiter {
+    	max-width: 2000px;
+    	text-align: left;
+    	margin: 0 auto;
+
+    }
+
+
 
     /* Logo */
 
     .header-basic .header-limiter h1 {
     	float: left;
-    	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
-    	line-height: 40px;
-    	margin: 0;
+    	margin: auto;
+
+
+
     }
 
     .header-basic .header-limiter h1 span {
@@ -87,15 +157,15 @@
 
     .header-basic .header-limiter nav a{
     	display: inline-block;
-    	padding: 0 5px;
+    	padding: 8px 10px;
     	text-decoration:none;
     	color: #ffffff;
-    	font-size: 16px;
+    	font-size: 12px;
     	opacity: 0.9;
     }
 
     .header-basic .header-limiter nav a:hover{
-    	opacity: 1;
+    	opacity: 5;
     }
 
     .header-basic .header-limiter nav a.selected {
@@ -115,14 +185,17 @@
 
     	.header-basic .header-limiter h1 {
     		float: none;
-    		margin: -8px 0 10px;
+    		margin: -8px 0 10px 80px;
     		text-align: center;
     		font-size: 24px;
     		line-height: 1;
+        width: 60%;
+        height: 40;
+
     	}
 
     	.header-basic .header-limiter nav {
-    		line-height: 1;
+    		line-height: 0;
     		float:none;
     	}
 
@@ -152,19 +225,54 @@
     left: 0;
     }
     #arrowPrev, #arrowNext {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     top: 50%;
     opacity: 1;
-    z-index: 99999;
+    color: #fff;
     }
     #arrowNext {
     right: 10px;
-        background: url('http://new.llhinteriors.com/wp-content/uploads/arrows-next.png'); }
+
+         }
     #arrowPrev {
     left: 10px;
-    background: url('http://new.llhinteriors.com/wp-content/uploads/arrows-prev.png');
+
+    }
+
+
+
+
+
+    .dropdown {
+      position: relative;
+
+      text-align: left;
+      width: 132px;
+      margin-left: auto ;
+      margin-right: auto;
+      margin-top: 20px;
+
+    }
+
+    .dropdown-text {
+      cursor: pointer;
+      position: absolute;
+      text-indent: 10px;
+      line-height: 32px;
+      background-color: transparent;
+      border: 1px solid #ccc;
+      border-radius: 0px;
+      width: 100%;
+    }
+
+
+
+    .dropdown-text,
+    .dropdown-content a {
+      color: #fff;
+
     }
 
 

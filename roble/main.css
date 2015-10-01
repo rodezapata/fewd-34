@@ -147,6 +147,27 @@ a:hover {
   opacity: 1;
 }
 
+#header_2 {
+  margin-left: 177px;
+}
+
+#header_3 {
+margin-left: 0px;
+}
+
+#header_4 {
+margin-left: 102px;
+}
+
+#header_5 {
+margin-left: 336px;
+}
+
+#header_6 {
+margin-left: 353px;
+}
+
+
 /* Background Image */
 
 .backgroundImage {

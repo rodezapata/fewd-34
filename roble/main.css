@@ -1,0 +1,284 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+.carousel-caption {
+  top:  200px;
+  left: -461px;
+  bottom: auto;
+  text-shadow: none;
+}
+
+.nav-categories {
+  padding: 20px;
+  text-align: center;
+}
+
+.carousel-caption p{
+  font-family: "Open Sans" sans-serif;
+  line-height: 1px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff
+
+}
+
+.carousel-control {
+  text-shadow: none;
+}
+
+a {
+  color: #959595;
+}
+
+a:hover {
+  color: #000;
+}
+
+.carousel-caption button{
+
+      border-color: #fff;
+      color: #fff;
+      font-family: "Open Sans" sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      height: 60px;
+      width: 200px;
+      margin: 5px 5px;
+      text-align: center;
+      color: #003366
+      border: #00ffff;
+      border-style: solid;
+      border-width: 1px;
+      background: transparent;
+      margin-top: 62px;
+      margin-left: -100px;
+  }
+
+.carousel-caption h1{
+  font-family: "Montserrat" sans-serif;
+  font-size: 100px;
+  line-height: 1px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 68px;
+  margin-left: 282px;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.header-basic {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
+  padding:20px 40px 0px 0px;
+  height: 75px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.header-basic {
+  width: 100%;
+  text-align: left;
+  padding-left: 45px;
+}
+
+.header-limiter {
+  max-width: 2000px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* Logo */
+
+.header-basic .header-limiter h1 {
+  float: left;
+  margin: auto;
+}
+
+.header-basic .header-limiter h1 span {
+  color: #5383d3;
+}
+
+/* The header links */
+
+.header-basic .header-limiter a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-basic .header-limiter nav{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font:16px
+  line-height: 60px;
+  float: right;
+}
+
+.header-basic .header-limiter nav a{
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration:none;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.header-basic .header-limiter nav a:hover{
+  opacity: 5;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.header-basic .header-limiter nav a.selected {
+  color: #608bd2;
+  pointer-events: none;
+  opacity: 1;
+}
+
+/* Background Image */
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(imagesjpg/1_bicicletas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Utility Bottom Bar */
+
+.backgroundImage .controls {
+  width: 100%;
+  height: 112px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+}
+
+.content {
+  height: 1000px;
+  background: #293033;
+}
+
+/* Hero Text */
+
+#section {
+min-height: 100%;
+width:500px;
+margin: 70px;
+float:left;
+padding:10px;
+background-color:transparent;
+
+}
+
+#section p{
+  font-family: "Open Sans" sans-serif;
+  line-height: 1px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff
+
+}
+
+#section h1{
+  font-family: "Montserrat" sans-serif;
+  font-size: 100px;
+  line-height: 1px;
+  font-weight: 700;
+  color: #fff
+
+}
+
+#section button{
+
+      border-color: #fff;
+      color: #fff;
+      font-family: "Open Sans" sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      height: 60px;
+      width: 200px;
+      margin: 5px 5px;
+      text-align: center;
+      color: #003366
+      border: #00ffff;
+      border-style: solid;
+      border-width: 1px;
+      background: transparent;
+  }
+
+
+  /* Making the header responsive */
+
+      @media all and (max-width: 600px) {
+
+        .header-basic {
+          padding: 20px 0;
+          height: 75px;
+        }
+
+        .header-basic .header-limiter h1 {
+          float: none;
+          margin: -8px 0 10px 80px;
+          text-align: center;
+          font-size: 24px;
+          line-height: 1;
+          width: 60%;
+          height: 40;
+        }
+
+        #wrapper #section h1 {
+          font-size: 40px;
+        }
+
+        .header-basic .header-limiter nav {
+          line-height: 0;
+          float:none;
+        }
+
+        .header-basic .header-limiter nav a {
+          font-size: 13px;
+        }
+
+      }
+
+
+      .nav-categories li {
+
+          display: inline-block;
+          padding: 20px 55px;
+
+          font-size: 12px;
+          font-family: "Open Sans" sans-serif;
+          text-align: center;
+          letter-spacing: 1.2px;
+
+          position: relative;
+          color: #CBCBCB
+
+
+
+        }
+
+        .icontext {
+
+          padding-top: 14px;
+          color: #ADADAD
+          text-align: center;
+
+        }
